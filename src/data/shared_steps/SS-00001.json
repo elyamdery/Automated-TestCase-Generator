@@ -1,0 +1,14 @@
+{
+  "id": "SS-00001",
+  "title": "Login to System",
+  "steps": [
+    "Navigate to the login page",
+    "Enter valid username and password",
+    "Click the login button"
+  ],
+  "expected_results": [
+    "Login page is displayed",
+    "Credentials are accepted",
+    "User is successfully logged in"
+  ]
+}

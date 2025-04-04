@@ -1,0 +1,111 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+logs/
+log/
+
+# Generated output
+output/
+generated_tests.csv
+*.csv
+
+# API keys and sensitive information
+.env
+*.key
+api_keys.py
+secrets.py
+credentials.json
+token.json
+
+# Platform-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test coverage
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.pytest_cache/
+coverage.xml
+*.cover
+
+# Sensitive data directories
+data/classified/
+data/sensitive/
+data/private/
+
+# Specific to this project
+# Ignore any files that might contain classified information
+*classified*
+*sensitive*
+*secret*
+*private*
+
+# Ignore specific files with platform details
+src/data/platform_details.json
+src/data/platform_config.json
+
+# Ignore any mock or example data that might contain sensitive information
+src/data/examples/
+src/data/mocks/
+
+# Ignore any generated documentation that might contain sensitive information
+docs/generated/
+docs/private/
+
+# Ignore any backup files
+*.bak
+*~
+*.backup
+*.old
+
+# Ignore any temporary files
+*.tmp
+temp/
+tmp/

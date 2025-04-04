@@ -1,0 +1,14 @@
+{
+  "id": "SS-00002",
+  "title": "Verify System Status",
+  "steps": [
+    "Navigate to the system status page",
+    "Check the status indicators",
+    "Verify all components show green status"
+  ],
+  "expected_results": [
+    "Status page loads successfully",
+    "Status indicators are visible",
+    "All components show green status"
+  ]
+}
