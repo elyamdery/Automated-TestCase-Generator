@@ -1,0 +1,13 @@
+ID,Work Item type,Title,Test Step,Step Action,Step expected
+TC-001,Test case,Elephant Basic Bike Mounting,,,
+,,,,1,"Position the bicycle in an open area with stable ground"
+,,,,2,"Guide the elephant to approach the bicycle from the left side"
+,,,,3,"Command the elephant to lift its right leg over the bicycle seat"
+,,,,4,"Ensure the elephant is properly balanced on the bicycle"
+,,,,5,"Verify the elephant is securely seated on the bicycle"
+TC-002,Test case,Elephant Pedaling Verification,,,
+,,,,1,"Ensure the elephant is properly mounted on the bicycle"
+,,,,2,"Adjust the pedals to accommodate the elephant's feet"
+,,,,3,"Guide the elephant to place its feet on the pedals"
+,,,,4,"Command the elephant to push the pedals in a circular motion"
+,,,,5,"Observe the bicycle wheels rotating as the elephant pedals"

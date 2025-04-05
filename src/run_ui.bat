@@ -9,4 +9,3 @@ echo.
 python ui_app.py
 echo.
 echo Application closed.
-pause

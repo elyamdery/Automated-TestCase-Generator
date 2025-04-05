@@ -1,0 +1,38 @@
+ID,Work Item type,Title,Test Step,Step Action,Step expected,
+TC-001,Test case,Elephant Basic Bike Mounting,,,,
+,,,,1,Position the bicycle in an open area with stable ground,The bicycle is positioned correctly
+,,,,2,Guide the elephant to approach the bicycle from the left side,The elephant approaches as directed
+,,,,3,Command the elephant to lift its right leg over the bicycle seat,The elephant lifts its leg properly
+,,,,4,Ensure the elephant is properly balanced on the bicycle,The elephant maintains balance
+,,,,5,Verify the elephant is securely seated on the bicycle,The elephant is properly positioned on the bicycle with good balance
+TC-002,Test case,Elephant Pedaling Verification,,,,
+,,,,1,Ensure the elephant is properly mounted on the bicycle,The elephant is securely mounted
+,,,,2,Adjust the pedals to accommodate the elephant's feet,Pedals are properly adjusted
+,,,,3,Guide the elephant to place its feet on the pedals,The elephant's feet are on the pedals
+,,,,4,Command the elephant to push the pedals in a circular motion,The elephant begins pedaling
+,,,,5,Observe the bicycle wheels rotating as the elephant pedals,The bicycle moves forward smoothly as the elephant pedals
+20934,Shared steps,Elephant Safety Equipment Application,,,,
+,,,,1,Retrieve the elephant-sized helmet from the equipment storage,Helmet is retrieved
+,,,,2,Place the helmet on the elephant's head and secure the straps,Helmet is secured properly
+,,,,3,Attach elbow and knee pads to the elephant's limbs,The elephant is properly equipped with all safety gear
+TC-003,Test case,Elephant Steering Control,,,,
+,,,,1,Ensure the elephant is properly mounted on the bicycle,The elephant is securely mounted
+,,,,2,Attach the extended handlebar grips to the standard handlebars,Handlebar grips are attached
+,,,,3,Shared action 20934,The elephant is properly equipped with all safety gear
+,,,,4,Guide the elephant to grasp the handlebar grips with its trunk,The elephant grasps the handlebars
+,,,,5,Command the elephant to turn the handlebars left and right,The elephant turns the handlebars
+,,,,6,Verify the elephant can maintain directional control,The elephant demonstrates ability to steer the bicycle in different directions
+TC-004,Test case,Elephant Braking Procedure,,,,
+,,,,1,Ensure the elephant is riding the bicycle at a moderate speed,The elephant is riding at appropriate speed
+,,,,2,Shared action 20934,The elephant is properly equipped with all safety gear
+,,,,3,Command the elephant to slow down using verbal cues,The elephant responds to verbal cues
+,,,,4,Guide the elephant to apply pressure to the brake lever with its trunk,The elephant applies pressure to brakes
+,,,,5,Verify the bicycle comes to a complete and controlled stop,The bicycle stops smoothly without causing the elephant to lose balance
+TC-005,Test case,Elephant Long-Distance Riding,,,,
+,,,,1,Shared action 20934,The elephant is properly equipped with all safety gear
+,,,,2,Ensure the elephant is properly mounted on the reinforced bicycle,The elephant is securely mounted
+,,,,3,Provide the elephant with adequate water and snacks for the journey,Supplies are properly provided
+,,,,4,Command the elephant to begin pedaling along the designated path,The elephant begins pedaling
+,,,,5,Monitor the elephant's stamina and comfort during the ride,Elephant's condition is monitored
+,,,,6,Ensure the elephant maintains proper hydration throughout the journey,Elephant remains properly hydrated
+,,,,7,Guide the elephant to the destination point,The elephant successfully completes the long-distance ride while maintaining good physical condition

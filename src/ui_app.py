@@ -115,6 +115,17 @@ class TestGeneratorApp:
             foreground="#7f8c8d"
         ).pack(anchor=tk.W, pady=(0, 10))
 
+        # Add a button to open the data directory
+        data_dir_frame = ttk.Frame(input_frame)
+        data_dir_frame.pack(fill=tk.X, pady=5)
+
+        ttk.Label(data_dir_frame, text="Can't find your files?").pack(side=tk.LEFT, padx=(0, 10))
+        ttk.Button(
+            data_dir_frame,
+            text="Open Data Directory",
+            command=self._open_data_directory
+        ).pack(side=tk.LEFT, padx=(0, 10))
+
         # SRS file selection
         srs_frame = ttk.Frame(input_frame)
         srs_frame.pack(fill=tk.X, pady=5)
@@ -373,13 +384,23 @@ class TestGeneratorApp:
 
     def _browse_srs(self):
         """Browse for SRS document."""
+        # Start in the data directory if it exists
+        initial_dir = os.path.abspath("data") if os.path.exists("data") else os.getcwd()
+
+        # Show a message to help the user
+        messagebox.showinfo(
+            "File Selection",
+            f"Looking for files in: {initial_dir}\n\nIf you don't see your files, please check this directory."
+        )
+
         file_path = filedialog.askopenfilename(
             title="Select SRS Document",
+            initialdir=initial_dir,
             filetypes=[
-                ("Word Documents", "*.docx"),
-                ("PDF Files", "*.pdf"),
+                ("All Files", "*.*"),
                 ("Text Files", "*.txt"),
-                ("All Files", "*.*")
+                ("Word Documents", "*.docx"),
+                ("PDF Files", "*.pdf")
             ]
         )
         if file_path:
@@ -387,11 +408,21 @@ class TestGeneratorApp:
 
     def _browse_tests(self):
         """Browse for existing test cases."""
+        # Start in the data directory if it exists
+        initial_dir = os.path.abspath("data") if os.path.exists("data") else os.getcwd()
+
+        # Show a message to help the user
+        messagebox.showinfo(
+            "File Selection",
+            f"Looking for files in: {initial_dir}\n\nIf you don't see your files, please check this directory."
+        )
+
         file_path = filedialog.askopenfilename(
             title="Select Existing Test Cases",
+            initialdir=initial_dir,
             filetypes=[
-                ("CSV Files", "*.csv"),
-                ("All Files", "*.*")
+                ("All Files", "*.*"),
+                ("CSV Files", "*.csv")
             ]
         )
         if file_path:
@@ -399,8 +430,12 @@ class TestGeneratorApp:
 
     def _browse_output(self):
         """Browse for output file location."""
+        # Start in the output directory if it exists
+        initial_dir = "output" if os.path.exists("output") else os.getcwd()
+
         file_path = filedialog.asksaveasfilename(
             title="Save Generated Test Cases",
+            initialdir=initial_dir,
             defaultextension=".csv",
             filetypes=[
                 ("CSV Files", "*.csv"),
@@ -600,6 +635,39 @@ class TestGeneratorApp:
         """
 
         messagebox.showinfo("Version Information", version_help)
+
+    def _open_data_directory(self):
+        """Open the data directory in the file explorer."""
+        # Create the data directory if it doesn't exist
+        data_dir = os.path.abspath("data")
+        if not os.path.exists(data_dir):
+            os.makedirs(data_dir, exist_ok=True)
+
+            # Create a README file in the data directory
+            readme_path = os.path.join(data_dir, "README.txt")
+            with open(readme_path, "w") as f:
+                f.write("""
+                DATA DIRECTORY
+
+                This directory is for storing input files for the Test Case Generator:
+
+                1. SRS Documents (*.txt, *.docx, *.pdf)
+                2. Existing Test Cases (*.csv)
+
+                Place your files in this directory to make them easily accessible from the application.
+                """)
+
+        # Open the directory in the file explorer
+        try:
+            if os.name == 'nt':  # Windows
+                os.startfile(data_dir)
+            elif os.name == 'posix':  # macOS, Linux
+                import subprocess
+                subprocess.Popen(['open', data_dir] if sys.platform == 'darwin' else ['xdg-open', data_dir])
+            else:
+                messagebox.showinfo("Open Directory", f"Data directory is located at:\n{data_dir}")
+        except Exception as e:
+            messagebox.showerror("Error", f"Could not open data directory: {str(e)}")
 
 
 def main():

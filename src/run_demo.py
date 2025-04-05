@@ -35,7 +35,7 @@ def main():
     parser = argparse.ArgumentParser(description='Run a demo of the test generation system')
     parser.add_argument('--srs', type=str, default='data/sample_srs.txt', help='Path to the SRS document')
     parser.add_argument('--tests', type=str, default='data/sample_tests.csv', help='Path to existing test cases')
-    parser.add_argument('--machine-type', type=str, default='X', choices=['X', 'Y', 'Z'], help='Target machine type')
+    parser.add_argument('--machine-type', type=str, default='X', choices=['X', 'Y', 'Z', 'A', 'B'], help='Target machine type')
     parser.add_argument('--version', type=str, default='1.0', help='Target version')
     parser.add_argument('--output', type=str, default='output/generated_tests.csv', help='Output file path')
     args = parser.parse_args()

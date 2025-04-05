@@ -1,0 +1,51 @@
+Software Requirements Specification
+Robot Omelet Maker System
+Platform Type A, Version 1.0
+Date: June 15, 2025
+
+1. Introduction
+This document outlines the requirements for the Automated Robot Omelet Maker System, which enables a robot to prepare omelets according to user specifications.
+
+2. Functional Requirements
+
+REQ-001: The robot shall be able to crack eggs into a bowl without shell fragments.
+
+REQ-002: The robot shall be able to whisk eggs to a consistent texture within 30 seconds.
+
+REQ-003: The robot shall be able to add ingredients (cheese, vegetables, meat) to the egg mixture based on user selection.
+
+REQ-004: The robot shall be able to heat a pan to the correct temperature (325°F ± 10°F) before cooking.
+
+REQ-005: The robot shall be able to pour the egg mixture into the pan without spillage.
+
+REQ-006: The robot shall be able to monitor cooking progress using visual sensors.
+
+REQ-007: The robot shall be able to fold the omelet properly once the bottom is cooked.
+
+REQ-008: The robot shall be able to transfer the completed omelet to a plate without breaking it.
+
+REQ-009: The robot shall be able to clean all utensils and cooking surfaces after completion.
+
+3. Non-Functional Requirements
+
+REQ-010: The robot shall complete the entire omelet-making process in less than 5 minutes.
+
+REQ-011: The robot shall maintain food safety standards throughout the process.
+
+REQ-012: The robot shall operate with noise levels below 60 decibels.
+
+4. Platform-Specific Requirements
+
+REQ-013: For Platform A, the robot shall use the standard spatula attachment for folding omelets.
+
+REQ-014: For Platform B, the robot shall use the enhanced heat-resistant spatula for folding omelets.
+
+REQ-015: For Platform Z, the robot shall use the specialized silicone spatula for folding omelets.
+
+5. Version-Specific Requirements
+
+REQ-016: For Version 1.0, the robot shall support basic omelet preparation with up to 3 ingredients.
+
+REQ-017: For Version 2.0, the robot shall support advanced omelet styles (French, Spanish, etc.) with up to 5 ingredients.
+
+REQ-018: For Version 3.0, the robot shall support customized cooking techniques and unlimited ingredients.
