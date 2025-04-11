@@ -1,0 +1,61 @@
+# Python-specific files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Log files
+*.log
+logs/
+
+# Output files
+output/
+!src/output/enhanced_test_cases.csv
+
+# Sensitive information
+PRESENTATION_GUIDE.md
+**/credentials.json
+**/secrets.json
+**/config.ini
+**/settings.ini
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

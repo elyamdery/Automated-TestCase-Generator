@@ -1,0 +1,26 @@
+ID,Work Item type,Title,Test Step,Step Action,Step expected
+E_2_0_SHARED_001,Shared steps,Common Setup for Easy Demo v2.0,,,
+,,,1,Power on the Easy Demo system and wait for boot sequence to complete,System powers on and completes boot sequence without errors
+,,,2,Log in with authorized technician credentials,Login is successful with appropriate authorization level
+,,,3,Verify system status indicators show normal operation,All system status indicators show green/normal status
+,,,4,Navigate to the main control panel,Main control panel is displayed with all expected controls
+E_2_0_001,Test case,Verify User Management analyze functionality,,,
+,,,,PRECONDITIONS: Easy Demo system v2.0 is powered on and operational. Technician is logged in with appropriate credentials.,
+,,,1,Access the User Management module from the main control panel,The User Management module interface is displayed with all controls and indicators visible
+,,,2,Verify the current User Management status and configuration parameters,All User Management status indicators are showing normal operation and configuration parameters match expected values
+E_2_0_002,Test case,Verify Reports import functionality,,,
+,,,,PRECONDITIONS: Easy Demo system v2.0 is powered on and operational. Technician is logged in with appropriate credentials.,
+,,,1,Shared action E_2_0_SHARED_001,All shared steps complete successfully
+,,,2,Access the Reports module from the main control panel,The Reports module interface is displayed with all controls and indicators visible
+E_2_0_003,Test case,Verify Device Control control functionality,,,
+,,,,PRECONDITIONS: Easy Demo system v2.0 is powered on and operational. Technician is logged in with appropriate credentials.,
+,,,1,Shared action E_2_0_SHARED_001,All shared steps complete successfully
+,,,2,Access the Device Control module from the main control panel,The Device Control module interface is displayed with all controls and indicators visible
+E_2_0_004,Test case,Verify Calibration optimize functionality,,,
+,,,,PRECONDITIONS: Easy Demo system v2.0 is powered on and operational. Technician is logged in with appropriate credentials.,
+,,,1,Access the Calibration module from the main control panel,The Calibration module interface is displayed with all controls and indicators visible
+,,,2,Verify the current Calibration status and configuration parameters,All Calibration status indicators are showing normal operation and configuration parameters match expected values
+E_2_0_005,Test case,Verify Reports adjust functionality,,,
+,,,,PRECONDITIONS: Easy Demo system v2.0 is powered on and operational. Technician is logged in with appropriate credentials.,
+,,,1,Access the Reports module from the main control panel,The Reports module interface is displayed with all controls and indicators visible
+,,,2,Verify the current Reports status and configuration parameters,All Reports status indicators are showing normal operation and configuration parameters match expected values

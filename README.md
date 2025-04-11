@@ -12,6 +12,28 @@ This project develops an AI-powered system that automatically generates professi
 - Structured output in CSV format compatible with TFS/Azure DevOps
 - User-friendly interface for configuration and operation
 - Secure local processing with no data transmission
+- Enhanced SRS analysis for technical documents
+- Platform-aware test generation with specialized terminology
+- Template-based writing style matching existing test cases
+
+### New Feature: Enhanced SRS Analysis and Test Case Generation
+
+The latest update includes significant improvements to the SRS analysis and test case generation capabilities:
+
+1. **Improved SRS Document Analysis**:
+   - Better extraction of requirements from technical documents
+   - Enhanced detection of platform-specific requirements
+   - Improved parsing of requirement details (features, actions, inputs)
+
+2. **Platform-Aware Test Generation**:
+   - Test cases are now generated with awareness of both platform information and SRS content
+   - Platform-specific terminology is incorporated into test steps
+   - Requirements are prioritized based on relevance to the selected platform
+
+3. **Template-Based Writing Style**:
+   - Test cases now follow the writing style of existing tests
+   - Consistent formatting of steps and expected results
+   - Adoption of domain-specific terminology from existing tests
 
 ## AI Agent Architecture
 
